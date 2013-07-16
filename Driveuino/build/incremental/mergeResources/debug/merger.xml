@@ -74,11 +74,49 @@
             <file
                 path="/home/rcprata/AndroidStudioProjects/DriveuinoProject/Driveuino/src/main/res/values/strings.xml"
                 qualifiers="" >
+                <string name="axis_z" >Inclinação em Z:\u0020
+                </string>
+                <string name="send" >Send
+                </string>
+                <string name="bt_not_enabled_leaving" >Bluetooth não está habilitado. Saindo da aplicação.
+                </string>
+                <string name="title_not_connected" >dispositvo não conectado
+                </string>
                 <string name="action_settings" >Settings
+                </string>
+                <string name="axis_x" >Inclinação em X:\u0020
+                </string>
+                <string name="title_connected_to" >conectado
+                </string>
+                <string name="axis_y" >Inclinação em Y:\u0020
+                </string>
+                <string name="not_connected" >Você não está conectado com o dispositivo.
+                </string>
+                <string name="scanning" >procurando por outros dispositivos...
+                </string>
+                <string name="title_other_devices" >Outros Dispositivos Disponíveis
+                </string>
+                <string name="select_device" >selecione um dispositivo para conectar
+                </string>
+                <string name="info" >Sobre Scope-Mobile
+                </string>
+                <string name="title_connecting" >conectando...
+                </string>
+                <string name="none_paired" >Nenhum dispositivo foi pareado
+                </string>
+                <string name="title_paired_devices" >Dispositivos Pareados
+                </string>
+                <string name="discoverable" >Torne-se detectável
+                </string>
+                <string name="none_found" >Nenhum dispositivo foi encontrado
                 </string>
                 <string name="app_name" >Driveuino
                 </string>
+                <string name="button_scan" >Procurar por Dispositivos
+                </string>
                 <string name="hello_world" >Hello world!
+                </string>
+                <string name="connect" >Conecte-se a um dispositivo
                 </string>
             </file>
             <file
@@ -104,6 +142,16 @@
                 path="/home/rcprata/AndroidStudioProjects/DriveuinoProject/Driveuino/src/main/res/drawable-xxhdpi/ic_launcher.png"
                 qualifiers="xxhdpi"
                 type="drawable" />
+            <file
+                name="device_list"
+                path="/home/rcprata/AndroidStudioProjects/DriveuinoProject/Driveuino/src/main/res/layout/device_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="device_name"
+                path="/home/rcprata/AndroidStudioProjects/DriveuinoProject/Driveuino/src/main/res/layout/device_name.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="/home/rcprata/AndroidStudioProjects/DriveuinoProject/Driveuino/build/res/rs/debug" />
     </dataSet>

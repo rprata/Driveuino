@@ -11,8 +11,6 @@ import android.os.PowerManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +18,9 @@ import com.rcprata.driveuino.core.AccelerometerService;
 import com.rcprata.driveuino.core.BluetoothService;
 import com.rcprata.driveuino.utils.Globals;
 import com.rcprata.driveuino.views.DeviceListActivity;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class Driveuino extends Activity {
 
@@ -33,6 +34,8 @@ public class Driveuino extends Activity {
     private AccelerometerService mAccelerometerService;
 
     boolean stateConnection = false;
+
+    NumberFormat f = new DecimalFormat("0.00");
 
 
     private final Handler handler = new Handler() {
@@ -55,11 +58,11 @@ public class Driveuino extends Activity {
                     break;
                 case Globals.MESSAGE_READ:
                     break;
-                case Globals.HANDLER_STATE_ACCELEROMETER:
+                case Globals.MESSAGE_HANDLER_ACCELEROMETER:
                     float[] accelerometerValues = (float[]) msg.obj;
-                    axisX.setText(getString(R.id.axis_x) + accelerometerValues[0]);
-                    axisY.setText(getString(R.id.axis_y) + accelerometerValues[1]);
-                    axisZ.setText(getString(R.id.axis_z) + accelerometerValues[2]);
+                    axisX.setText(getString(R.string.axis_x) + f.format(accelerometerValues[0]));
+                    axisY.setText(getString(R.string.axis_y) + f.format(accelerometerValues[1]));
+                    axisZ.setText(getString(R.string.axis_z) + f.format(accelerometerValues[2]));
                     break;
                 default:
                     break;
@@ -71,8 +74,6 @@ public class Driveuino extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         axisX = (TextView)findViewById(R.id.axis_x);
         axisY = (TextView)findViewById(R.id.axis_y);

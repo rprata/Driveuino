@@ -6,9 +6,9 @@
     <string name="hello_world">Hello world!</string>
 
 
-    <string name="axis_x">Inclinação em X: </string>
-    <string name="axis_y">Inclinação em Y: </string>
-    <string name="axis_z">Inclinação em Z: </string>
+    <string name="axis_x">Inclinação em X:\u0020</string>
+    <string name="axis_y">Inclinação em Y:\u0020</string>
+    <string name="axis_z">Inclinação em Z:\u0020</string>
 
     <!-- Bluetooth -->
     <string name="send">Send</string>

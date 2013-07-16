@@ -25,7 +25,7 @@ public class AccelerometerService implements SensorEventListener {
     }
 
     public boolean registerAccelerometerServiceListener() {
-        return mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_FASTEST);
+        return mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     public void unregisterAccelerometerServiceListener() {
@@ -38,7 +38,7 @@ public class AccelerometerService implements SensorEventListener {
         for (int i = 0; i < 3; i++)
             values[i] = sensorEvent.values[i];
 
-        mHandler.obtainMessage(Globals.HANDLER_STATE_ACCELEROMETER, values).sendToTarget();
+        mHandler.obtainMessage(Globals.MESSAGE_HANDLER_ACCELEROMETER, values).sendToTarget();
     }
 
     @Override

@@ -16,7 +16,7 @@ public class Globals {
     public static final int MESSAGE_WRITE = 3;
     public static final int MESSAGE_DEVICE_NAME = 4;
     public static final int MESSAGE_TOAST = 5;
-    public static final int HANDLER_STATE_ACCELEROMETER = 6;
+    public static final int MESSAGE_HANDLER_ACCELEROMETER = 6;
 
 
     //Extras
