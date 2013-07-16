@@ -10,5 +10,27 @@
     <string name="axis_y">Inclinação em Y: </string>
     <string name="axis_z">Inclinação em Z: </string>
 
+    <!-- Bluetooth -->
+    <string name="send">Send</string>
+    <string name="not_connected">Você não está conectado com o dispositivo.</string>
+    <string name="bt_not_enabled_leaving">Bluetooth não está habilitado. Saindo da aplicação.
+    </string>
+    <string name="title_connecting">conectando...</string>
+    <string name="title_connected_to">conectado</string>
+    <string name="title_not_connected">dispositvo não conectado</string>
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">procurando por outros dispositivos...</string>
+    <string name="select_device">selecione um dispositivo para conectar</string>
+    <string name="none_paired">Nenhum dispositivo foi pareado</string>
+    <string name="none_found">Nenhum dispositivo foi encontrado</string>
+    <string name="title_paired_devices">Dispositivos Pareados</string>
+    <string name="title_other_devices">Outros Dispositivos Disponíveis</string>
+    <string name="button_scan">Procurar por Dispositivos</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Conecte-se a um dispositivo</string>
+    <string name="discoverable">Torne-se detectável</string>
+    <string name="info">Sobre Scope-Mobile</string>
 
 </resources>

@@ -6,6 +6,10 @@
 
     <uses-feature android:name="android.hardware.sensor.accelerometer"
                   android:required="true" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <uses-sdk
         android:minSdkVersion="7"
@@ -26,6 +30,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+                android:name="com.rcprata.driveuino.views.DeviceListActivity"
+                android:label="@string/select_device"
+                android:screenOrientation="landscape"
+                android:theme="@android:style/Theme.Dialog" />
     </application>
 
 </manifest>
