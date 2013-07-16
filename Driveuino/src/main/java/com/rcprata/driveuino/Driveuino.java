@@ -89,8 +89,6 @@ public class Driveuino extends Activity {
             finish();
             return;
         }
-
-        mAccelerometerService = new AccelerometerService(this, handler);
     }
 
     @Override
@@ -105,6 +103,9 @@ public class Driveuino extends Activity {
                 setupConfigurations();
             }
         }
+
+        mAccelerometerService = new AccelerometerService(this, handler);
+
     }
 
     @Override
